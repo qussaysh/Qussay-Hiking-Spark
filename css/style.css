@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    
+    direction: ltr;
+    
+}
+.title {
+    padding-top : 100px;
+    text-align: center;
+}
+.title h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+.title span {
+    display: block;
+    height: 2.5px;
+    width: 60px;
+    margin: auto;
+    background-color: #000;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+section {
+    margin-top: 100px;
+}
+
+/* Header */
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+nav .navbar-brand {
+    font-size: 25px;
+    color: #007bff;
+}
+nav a  {
+    font-weight: 600;
+}
+
+/* Home Section */
+.home {
+    background-image: url(../images/back4.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.home-content {
+    width: 50%;
+    text-align: center;
+    padding: 70px;
+    
+    
+}
+.home-content h3 , p {
+    margin-top: 100px;
+}
+.home-content h3 {
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+.home-content p {
+    line-height: 1,7;
+    margin-top: 10px;
+    color: #000;
+}
+@media (max-width: 767.98px) {
+    .home-content  {
+        width: 500px;
+        text-align: left;
+    }
+    .home-content p {
+        color: #fff;
+    }
+    
+ }
+
+ /* About Section */
+
+.about-item {
+    padding: 10px 80px;
+}
+.about-item h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #007bff;
+}
+.about-item p {
+    line-height: 1.7;
+    color: #5e5e5e;
+}
+@media (max-width: 767.98px) {
+    .about-item {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-item p {
+        line-height: 1.8;
+        overflow-x: hidden;
+    }
+    
+ }
+ @media only screen and (min-width: 600px) {
+    
+    .about-item p {
+        line-height: 1.8;
+        overflow-x: hidden;
+    }
+    
+} 
+
+/* Service Section */
+.service .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,  minmax(300px , 1fr));
+    grid-gap: 30px;
+}
+.service-content {
+    text-align: center;
+    background-color: #007bff;
+    padding: 30px;
+    border-radius: 6.5px;
+}
+.service-content i {
+    color: #fff;
+}
+.service-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #fff;
+}
+.service-content p {
+    color: #fff;
+    line-height: 1.6;
+}
+.service-content button {
+    width: 100px;
+    height: 34px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #d8ebff;
+    border: none;
+    background-color: #1e90ff;
+}
+.service-content button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.service-content button:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.service-content:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+}
+/* Features */
+.features {
+    background-color: #007bff;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.features-content {
+    margin: auto;
+}
+.features-content i , h5 , span {
+    color: #fff;
+}
+.features-content h5 {
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+.features-content span {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.features-content :hover {
+    transform: scale(1.1);
+    transition: all .3s;
+    
+}
+.features-content i {
+    margin-top: 15px;
+}
+/* Price */
+.price {
+    display: flex;
+    justify-content: space-around;
+}
+.price-content {
+    text-align: center;
+    background-color: #007bff;
+    padding: 50px;
+    border-radius: 6px ;
+    width: 300px;
+    height: 400px;
+}
+.price-content span {
+    font-size: 25px;
+    font-weight: 600;
+}
+.price-content h4 {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff;
+    padding-top: 20px;
+}
+.price-content p ,h4 , h3 {
+    color: #fff;
+    margin-top: 20px;
+}
+.price-content button {
+    width: 90px;
+    height: 25px;
+    text-align: center;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #007bff;
+}
+.price-content button a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+.price-content p {
+    font-weight: 700
+}
+.price-content h3 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+.price-content button:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+    width: 150px;
+    animation: ease 3px;
+}
+.price-content:hover {
+    transform: scale(1.1);
+    transition: all .3s;
+}
+.price-2 {
+    transform: scale(1.1);
+    
+}
+.price-2:hover {
+    transform: scale(1.2);
+}
+.price-content i {
+    color: yellow;
+    margin-top: 15px;
+}
+@media (max-width: 767.98px) {
+    
+    
+ }
+
+ /* Team Section */
+
+ .team {
+     background-image: url(../images/nathan-dumlao-bWVDTNHcXPk-unsplash.jpg);
+     height: 320px;
+     background-size: cover;
+    position: relative; 
+ }
+ .overlay {
+     position: absolute;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 70%);
+     height: 100%;
+ }
+.team-content {
+    display: flex;
+}
+.team-item {
+    text-align: center;
+    margin-top: 70px;
+}
+.team-item img {
+    border-radius: 50%;
+}
+.team-item h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #007bff;
+    
+}
+.team-item p {
+    line-height: 1.7;
+    color: #fff;
+    margin-top: 12px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    height: 220px;
+    margin-top: 100px;
+    text-align: center;
+}
+.footer-content {
+    padding-top: 50px;
+    
+}
+.footer-content h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #007bff;
+}
+.footer-content ul li {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+}
+.footer-content span  {
+    margin-top: 5px;
+}
