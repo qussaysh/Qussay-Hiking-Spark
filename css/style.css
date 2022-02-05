@@ -46,7 +46,12 @@ nav .navbar-brand {
 nav a  {
     font-weight: 600;
 }
-
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 /* Home Section */
 .home {
     background-image: url(../images/back4.jpg);
@@ -165,7 +170,11 @@ nav a  {
     transform: scale(1.1);
     transition: all .3s;
 }
+
+
 /* Features */
+
+
 .features {
     background-color: #007bff;
     background-size: cover;
@@ -202,7 +211,8 @@ nav a  {
 /* Price */
 .price {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .price-content {
     text-align: center;
@@ -211,6 +221,7 @@ nav a  {
     border-radius: 6px ;
     width: 300px;
     height: 400px;
+    margin: 0 20px;
 }
 .price-content span {
     font-size: 25px;
@@ -239,7 +250,8 @@ nav a  {
     color: #007bff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
+    padding: 5px;
 }
 .price-content p {
     font-weight: 700
@@ -260,7 +272,7 @@ nav a  {
     transition: all .3s;
 }
 .price-2 {
-    transform: scale(1.1);
+    
     
 }
 .price-2:hover {
@@ -271,7 +283,14 @@ nav a  {
     margin-top: 15px;
 }
 @media (max-width: 767.98px) {
-    
+    .price-content{
+        height: 460px;
+        margin: 20px 0;
+    }
+    .price-content button:hover {
+        transform: none;
+        
+    }
     
  }
 
@@ -312,6 +331,10 @@ nav a  {
 }
 
 /* Footer */
+
+
+
+
 
 footer {
     background-color: #000;
